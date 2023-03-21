@@ -16,6 +16,6 @@ xhr.send();//Make sure response is sent back
 xhr.onload = function () { //Execute a function once all the loading and return funcitonality is completed
   var responseObj = xhr.response;
   for(var i = 0; i < responseObj.length; i++) {
-    console.log(responseObj[i])
+    console.log(responseObj[i].flag)
   }
 }
