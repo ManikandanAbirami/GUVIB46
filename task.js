@@ -22,7 +22,7 @@ xhr.onload = function () { //Execute a function once all the loading and return 
 }
 
 var names = ["Mani", "John", "Jill"];
-var result = "";
+var result = " ";
 
 for(var i = 0; i < names.length; i++){
   result += names[i] + " ";
