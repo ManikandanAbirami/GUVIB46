@@ -1,0 +1,6 @@
+Object property shorthand
+Map, Reduce,  Filter
+What is classes in js?
+consntructor
+need of setters/getters
+use of this key word in classes
