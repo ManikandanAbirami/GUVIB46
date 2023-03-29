@@ -1,3 +1,10 @@
 1. Prototype:
 Each object has a private property which holds a 
 link to another object called its prototype.
+
+2. The popular 'this' keyword points to the gobal window object in the 
+context of browsers when written inside a regualr function call. The 
+'this' keyword points to the object to which the method is bond.
+
+3. The methods - bind(), call(), apply() are used to bind a function while 
+passing the desired scope to the inner function.

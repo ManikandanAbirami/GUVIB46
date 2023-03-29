@@ -3,11 +3,11 @@ var operation = {
     a: 1,
     b: 2,
     add: function() {
-        console.log(this.a + this.b + c);
+        // console.log(this.a + this.b + c);
         console.log(`a = ${this.a}, b = ${this.b}, c = ${c}`);
-        var print = function() {
+        var print = () => {
             console.log(`a = ${this.a}, b = ${this.b}, c = ${c}`);
-        }.bind(this);
+        }//.bind(this);
         print();
     }
 }
@@ -25,6 +25,6 @@ var person = {
     }
 }
 
-person.get();
+// person.get();
 
 //call() & apply()
