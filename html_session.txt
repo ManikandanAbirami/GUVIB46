@@ -4,7 +4,20 @@ HTML (HyperText Markup Language) is the most basic building block of the Web.
 It defines the meaning and structure of web content.
 
 2.Basic Tags:
-<></>
+<head></head> -  basic container of metadata
+
+<a> - for link
+<b> to make bold text
+<strong> to make bold text 
+<body> main HTML part
+<br> for break
+<div> section/part/divison of an HTML document
+<h1>
+<i> to make italic text
+<img> images
+<p> paragraph
+<span> to style part of text
+<ol>, <ul> , <li> ordered list
 
 3.HTML vs HTML5
 4.div vs section vs article
