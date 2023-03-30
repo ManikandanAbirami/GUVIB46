@@ -8,3 +8,14 @@ context of browsers when written inside a regualr function call. The
 
 3. The methods - bind(), call(), apply() are used to bind a function while 
 passing the desired scope to the inner function.
+
+4. Block elements:
+
+<div>, <p> - always starts on a new line
+browser add some space before and after the element
+Always takes up the full available width
+
+5. Inline elements:
+
+<span> - does not start on a new line
+Always takes up as much width as neccessary
