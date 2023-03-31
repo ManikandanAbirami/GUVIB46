@@ -38,3 +38,7 @@ line break with space
 9. inline-block:
 
 no line break with space
+
+10. Pseudo-classes:
+
+A pseudo-class is used to define a special state of an element.
