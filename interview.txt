@@ -19,3 +19,22 @@ Always takes up the full available width
 
 <span> - does not start on a new line
 Always takes up as much width as neccessary
+
+6. Table:
+
+<table> - table
+<tr> - table row
+<th> - table header
+<td> - table data
+
+7. inline:
+
+no line break without space
+
+8. block:
+
+line break with space
+
+9. inline-block:
+
+no line break with space
