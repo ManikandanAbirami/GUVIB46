@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      .main {
+        background-color: dodgerblue;
+        padding: 10px;
+        position: sticky;
+        bottom: 10px;
+        left: 10px;
+      }
+      .sibling {
+        background-color: grey;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      .parent {
+        position: relative;
+        height: 100px;
+        background-color: #81adc8;
+        padding: 10px;
+      }
+      html {
+        height: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="sibling">Sibiling element.</div>
+      <div class="main">Main element.</div>
+      <div class="sibling">Sibiling element.</div>
+    </div>
+  </body>
+</html>

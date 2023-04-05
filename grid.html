@@ -5,14 +5,14 @@
     <style>
       .wrapper {
         display: grid;
-        grid-template-columns: repeat(4);
+        /* grid-template-columns: repeat(3); */
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
       }
       .one {
         border: 1px solid black;
         background-color: rgb(255, 30, 30);
-        grid-column: 1/4;
+        grid-column: 1;
         grid-row: 1;
       }
       .two {
@@ -30,20 +30,20 @@
       .four {
         border: 1px solid black;
         background-color: rgb(30, 255, 240);
-        grid-column: 4;
-        grid-row: 1;
+        grid-column: 1;
+        grid-row: 2;
       }
       .five {
-        /* border: 1px solid black;
+        border: 1px solid black;
         background-color: rgb(255, 233, 30);
         grid-column: 2;
-        grid-row: 4; */
+        grid-row: 2;
       }
       .six {
-        /* border: 1px solid black;
+        border: 1px solid black;
         background-color: dodgerblue;
         grid-column: 3;
-        grid-row: 4; */
+        grid-row: 2;
       }
     </style>
   </head>
@@ -52,10 +52,9 @@
       <div class="one">One</div>
       <div class="two">Two</div>
       <div class="three">Three</div>
-      <!-- <div class="four">Four</div>
+      <div class="four">Four</div>
       <div class="five">Five</div>
       <div class="six">Six</div>
-      <div class="six">Seven</div> -->
     </div>
     <!-- <div>
       <table style="border: 1px solid black">

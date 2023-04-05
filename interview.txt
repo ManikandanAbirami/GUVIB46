@@ -42,3 +42,15 @@ no line break with space
 10. Pseudo-classes:
 
 A pseudo-class is used to define a special state of an element.
+
+11. Position property in CSS:
+
+Static(default), Relative(normal flow), absolute(depends on parent),
+fixed(absolute), sticky(relative)
+
+12. Mobile First Approach/Design:
+
+It is easier to scale a design up to larger screens than to scale 
+it down to smaller screens. Due to the massive growth of Mobile
+browsing, this makes mobile first design a great development
+workflow.

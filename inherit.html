@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      span {
+        color: blue;
+        border: 1px solid black;
+      }
+
+      .extra span {
+        color: inherit;
+      }
+
+      #grad {
+        height: 500px;
+        /* background-color: red; */
+        /* background-image: linear-gradient(white, grey, black); */
+        background-image: radial-gradient(white, grey, black);
+      }
+    </style>
+  </head>
+  <body id="grad">
+    <div>
+      <div>
+        Here is <span>a span element</span> which is blue, as span elements are
+        set to be.
+      </div>
+
+      <div class="extra" style="color: green">
+        Here is <span>a span element</span> which is green, because it inherits
+        from its parent.
+      </div>
+
+      <div style="color: red">
+        Here is <span>a span element</span> which is blue, as span elements are
+        set to be.
+      </div>
+    </div>
+  </body>
+</html>
