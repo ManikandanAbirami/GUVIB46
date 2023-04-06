@@ -1,0 +1,11 @@
+https://fontawesome.com/v4/get-started/
+
+
+
+
+
+
+Later:
+
+1. https://cdnjs.com/libraries/font-awesome 
+2. https://fontawesome.com/icons/link?f=classic&s=solid
