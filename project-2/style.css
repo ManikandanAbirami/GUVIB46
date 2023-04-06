@@ -1,11 +1,13 @@
 body {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas: 
-        "header header header"
-        "main aside nav"
-        "footer footer footer";
+    grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main" 
+        "aside"
+        "footer";
     padding: 1em;
     gap: 10px
 }
@@ -32,16 +34,14 @@ body > * {
     padding: 5px;
 }
 
-@media (max-width : 800px) {
+@media (min-width : 800px) {
     body {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
         grid-template-areas: 
-        "header"
-        "nav"
-        "main" 
-        "aside"
-        "footer";
+        "header header header"
+        "main aside nav"
+        "footer footer footer";
     }
 }
 
