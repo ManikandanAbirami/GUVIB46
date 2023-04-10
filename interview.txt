@@ -54,3 +54,12 @@ It is easier to scale a design up to larger screens than to scale
 it down to smaller screens. Due to the massive growth of Mobile
 browsing, this makes mobile first design a great development
 workflow.
+
+13. Bootstrap is a free and open-source CSS framework directed at responsive, 
+    mobile-first front-end web development. It contains HTML, CSS and 
+    JavaScript-based design templates for typography, forms, buttons, 
+    navigation, and other interface components.
+
+    Container: The container is the fundamental building block of the Bootstrap 
+    layout. It is used to center and align your content on the page, 
+    providing a responsive and fluid design.
