@@ -63,3 +63,13 @@ workflow.
     Container: The container is the fundamental building block of the Bootstrap 
     layout. It is used to center and align your content on the page, 
     providing a responsive and fluid design.
+
+14. DOM - Document Object Model
+
+The programming interface for interacting with an HTML document represented
+as a tree data structure. Each HTML element in the document is a node in
+the DOM tree, with nested content represented as children in the tree.
+
+--> provides an API
+--> Tree structure
+--> Elements & Text are nodes
