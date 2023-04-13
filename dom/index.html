@@ -7,11 +7,46 @@
     <h1>The Document Object Model</h1>
     <h2>The createElement() Method</h2>
 
-    <p id="para1">Create a p element with some text:</p>
+    <p id="demo"></p>
+
+    <p id="para1" class="test1">Create a p1 element with some text:</p>
 
     <script>
+      document.getElementById("demo").innerHTML =
+        "Browser inner window width: " +
+        window.innerWidth +
+        "px<br>" +
+        "Browser inner window height: " +
+        window.innerHeight +
+        "px<br>" +
+        "Screen width: " +
+        screen.width +
+        "px<br>" +
+        "Screen height: " +
+        screen.height +
+        "px<br>" +
+        "Screen available width: " +
+        screen.availWidth +
+        "px<br>" +
+        "Screen available height: " +
+        screen.availHeight +
+        "px<br>" +
+        "Screen Color Depth: " +
+        screen.colorDepth +
+        "px<br>" +
+        "Screen Pixel Depth: " +
+        screen.pixelDepth +
+        "px<br>";
       const para1 = document.getElementById("para1");
       para1.style.color = "red";
+
+      // document.querySelector(".test4").style.backgroundColor = "yellow";
+
+      const nodeList = document.querySelectorAll("p");
+
+      for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].style.backgroundColor = "grey";
+      }
 
       //create element
       const para = document.createElement("p");

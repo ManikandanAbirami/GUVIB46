@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h2>Javascript Alert</h2>
+    <button onclick="myFunction()">Click me</button>
+    <script>
+      function myFunction() {
+        alert("Hi GUVI46 batch members!!");
+      }
+    </script> -->
+    <!-- <h2>Javascript Confirm Box</h2>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var txt;
+        if (confirm("Are you okay, today???")) {
+          txt = "You pressed ok!";
+        } else {
+          txt = "You pressed cancel!!";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+    </script> -->
+    <h2>Javascript Prompt</h2>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    <input type="text" onkeypress="checkNumbers(event)" />
+    <script>
+      function myFunction() {
+        var txt;
+        let name = prompt("pls, enter your name:");
+        if (name == null || name == "") {
+          txt = "User cancelled the prompt.!";
+        } else {
+          txt = "Hello " + name + "! How are you??";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+      function checkNumbers() {
+        if (event.charCode >= 48 && event.charCode <= 57) {
+        } else {
+          alert("Only numbers!!!");
+        }
+      }
+    </script>
+  </body>
+</html>

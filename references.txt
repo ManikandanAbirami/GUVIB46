@@ -14,3 +14,13 @@ Later:
 Bootstrap:
 
 https://designmodo.com/bootstrap-5-layout/
+
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+
+Task - Calculator:
+
+
+https://codepen.io/kalpeshsingh/pen/wMNpLp
+https://www.tutorialspoint.com/real-time-calculator-using-html-css-and-javascript
+https://www.w3schools.in/css/examples/creating-a-simple-calculator-design-using-html-and-css
