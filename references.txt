@@ -24,3 +24,14 @@ Task - Calculator:
 https://codepen.io/kalpeshsingh/pen/wMNpLp
 https://www.tutorialspoint.com/real-time-calculator-using-html-css-and-javascript
 https://www.w3schools.in/css/examples/creating-a-simple-calculator-design-using-html-and-css
+
+pagination task:
+
+https://gist.github.com/rvsp/add40254aa126f045837fa5b51f47f1f
+
+https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json
+
+https://webdesign.tutsplus.com/tutorials/pagination-with-vanilla-javascript--cms-41896
+
+1. design
+2. display json data
