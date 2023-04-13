@@ -73,3 +73,6 @@ the DOM tree, with nested content represented as children in the tree.
 --> provides an API
 --> Tree structure
 --> Elements & Text are nodes
+
+append --> Node + Text
+appendChild --> Only Node object

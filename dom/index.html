@@ -4,10 +4,45 @@
     <title>My Webpage</title>
   </head>
   <body>
-    <h1>Hello world</h1>
-    <p>
-      Hello, <br />
-      How are you?
-    </p>
+    <h1>The Document Object Model</h1>
+    <h2>The createElement() Method</h2>
+
+    <p id="para1">Create a p element with some text:</p>
+
+    <script>
+      const para1 = document.getElementById("para1");
+      para1.style.color = "red";
+
+      //create element
+      const para = document.createElement("p");
+      para.innerText = "This is a paragraph.";
+      para.setAttribute("id", "para2");
+      para.innerHTML = "<span>Hey John!!!</span>";
+
+      // Append to body
+      document.body.appendChild(para);
+
+      const head = document.createElement("h1");
+      head.innerText = "Welcome All@@@@@@@@";
+      head.setAttribute("id", "head1");
+
+      document.body.appendChild(head);
+
+      const div = document.createElement("div");
+      div.innerText = "GUVIB46 Weekday!!!!";
+      div.innerHTML = "<div>This is innerHTML</div>";
+      div.setAttribute("id", "div1");
+
+      document.body.appendChild(div);
+
+      const parent = document.createElement("div");
+      parent.setAttribute("id", "parent");
+      // parent.innerHTML = "<p></p>";
+      const child = document.createElement("p");
+      // const parentDiv = document.getElementById("parent");
+      // document.parentDiv.appendChild(child);
+      parent.appendChild("Welcome everyone!!!");
+      document.body.appendChild(parent);
+    </script>
   </body>
 </html>
