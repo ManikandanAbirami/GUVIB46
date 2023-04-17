@@ -76,3 +76,10 @@ the DOM tree, with nested content represented as children in the tree.
 
 append --> Node + Text
 appendChild --> Only Node object
+
+
+15. JavaScript is a single-threaded synchronous language which executes all the code 
+line by line in the order in which it is written.
+
+16. In Asynchronous programming, you can do taks without waiting for a task to 
+complete its execution.

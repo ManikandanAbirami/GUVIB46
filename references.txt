@@ -35,3 +35,6 @@ https://webdesign.tutsplus.com/tutorials/pagination-with-vanilla-javascript--cms
 
 1. design
 2. display json data
+
+
+https://youtu.be/3Jma9VYvSz8
