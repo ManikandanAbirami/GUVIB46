@@ -42,30 +42,30 @@
 // add(displayCompletion);
 // sub(displayCompletion);
 
-let name;
+// let name;
 
-const wish = () => {
-  console.log(`Hello ${name}`);
-};
-const wish1 = () => {
-  console.log(`Hello ${name}`);
-};
-const wish2 = () => {
-  console.log(`Hello ${name}`);
-};
-const wish3 = () => {
-  console.log(`Hello ${name}`);
-};
+// const wish = () => {
+//   console.log(`Hello ${name}`);
+// };
+// const wish1 = () => {
+//   console.log(`Hello ${name}`);
+// };
+// const wish2 = () => {
+//   console.log(`Hello ${name}`);
+// };
+// const wish3 = () => {
+//   console.log(`Hello ${name}`);
+// };
 
 const getName = () => {
+  console.log("a");
   setTimeout(() => {
-    name = "Guvi B46 WD Tamil Batch";
-    console.log("name");
+    console.log("b");
   }, 5000);
+  console.log("c");
+  setTimeout(() => {
+    console.log("d");
+  }, 1000);
 };
 
 getName();
-wish();
-wish1();
-wish2();
-wish3();
