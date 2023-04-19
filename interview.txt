@@ -84,6 +84,7 @@ line by line in the order in which it is written.
 16. In Asynchronous programming, you can do taks without waiting for a task to 
 complete its execution.
 
-17. Callback - pass a function as an argument to another function
+17. Callback - pass a function as an argument to another function. The primary purpose 
+of a callback is to execute code in response to an event.
 
 18. Callback Hell: nested callback is called callback hell
