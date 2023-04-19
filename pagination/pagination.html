@@ -12,12 +12,15 @@
     </div>
     <script>
       var xhr = new XMLHttpRequest(); //Create Object
-      xhr.open(
-        "GET",
-        "https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json"
-      ); //Access API from the server
+      setTimeout(() => {
+        xhr.open(
+          "GET",
+          "https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json"
+        ); //Access API from the server
+        xhr.send();
+      }, 3000);
       xhr.responseType = "json"; //Set the response type
-      xhr.send(); //Make sure response is sent back
+      //Make sure response is sent back
       xhr.onload = function () {
         //Execute a function once all the loading and return funcitonality is completed
         var responseObj = xhr.response;

@@ -88,3 +88,10 @@ complete its execution.
 of a callback is to execute code in response to an event.
 
 18. Callback Hell: nested callback is called callback hell
+
+19. Callback serve a great purpose in asynchronous programming,
+
+There are 2 cases in which Callback is used,
+
+a. Mark completion of a long-running task.
+b. Execute a task after a long-running task.

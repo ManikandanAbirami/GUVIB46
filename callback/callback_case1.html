@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-container {
+        text-align: center;
+      }
+      .custom-btn {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: dodgerblue;
+        color: azure;
+        font-size: 20px;
+        height: 50px;
+        text-align: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div calss="main-container">
+      <button id="mybtn" class="custom-btn">Click Me</button>
+    </div>
+
+    <script>
+      const display = () => {
+        alert("Button clicked from HTML tag event!!");
+      };
+      // getting the DOM element with ID mybtn and attaching
+      // an event listener on it
+      // When the button is clicked, this callback function is
+      // called.
+      // .addEventListener('eventName', () => {
+      //
+      //})
+      const display1 = () => {
+        alert("Button clicked!!");
+      };
+      document.getElementById("mybtn").addEventListener("click", display1);
+    </script>
+  </body>
+</html>
