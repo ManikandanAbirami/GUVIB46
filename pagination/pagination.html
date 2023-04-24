@@ -11,6 +11,19 @@
       <h1>Pagination</h1>
     </div>
     <script>
+      let lat = "";
+      let long = "";
+      let APIkey = "";
+      fetch(
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${APIkey}`
+      );
+      fetch(
+        "https://history.openweathermap.org/data/2.5/history/city?lat=41.85&lon=-87.65&appid=19a8470a463433487b03f8f82158f8e9"
+      )
+        .then((response) => response.json())
+        .then((json) => console.log(json))
+        .catch((err) => console.log("Error occured: " + err));
+
       var xhr = new XMLHttpRequest(); //Create Object
       setTimeout(() => {
         xhr.open(

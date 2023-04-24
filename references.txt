@@ -37,4 +37,7 @@ https://webdesign.tutsplus.com/tutorials/pagination-with-vanilla-javascript--cms
 2. display json data
 
 
+37ba9824a231c697643e4a57ef092cf6
+
+
 https://youtu.be/3Jma9VYvSz8
