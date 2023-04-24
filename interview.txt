@@ -95,3 +95,10 @@ There are 2 cases in which Callback is used,
 
 a. Mark completion of a long-running task.
 b. Execute a task after a long-running task.
+
+ 20. async & await - keywords introduced in ES8(ES2017), which are
+ internally based on promises but makes the code more readable as
+ compared to promises.
+
+ 21. When the keyword 'async' is prepended to a function, it can before
+ safely assumed that a promise is returned from that function.
