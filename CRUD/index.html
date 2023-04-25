@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD using HTML CSS & JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Notes taking App</h1>
+    <div class="container">
+      <div class="left">
+        <form id="form">
+          <label for="">Write your notes here:</label>
+          <br /><br />
+          <textarea name="" id="input" cols="30" rows="10"></textarea>
+          <br /><br />
+          <div id="msg"></div>
+          <button type="submit">Save</button>
+        </form>
+      </div>
+      <div class="right">
+        <h3>Your notes here</h3>
+        <div id="notes">
+          <div>
+            <p>Note 1</p>
+            <span class="options">
+              <i onClick="editNote(this)" class="fa-solid fa-edit"></i>
+              <i onClick="deleteNote(this)" class="fa-solid fa-trash-can"></i>
+            </span>
+          </div>
+          <div>
+            <p>Note 2</p>
+            <span class="options">
+              <i onClick="editNote(this)" class="fa-solid fa-edit"></i>
+              <i onClick="deleteNote(this)" class="fa-solid fa-trash-can"></i>
+            </span>
+          </div>
+          <div>
+            <p>Note 3</p>
+            <span class="options">
+              <i onClick="editNote(this)" class="fa-solid fa-edit"></i>
+              <i onClick="deleteNote(this)" class="fa-solid fa-trash-can"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
