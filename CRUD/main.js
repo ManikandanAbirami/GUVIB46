@@ -48,3 +48,19 @@ let editNote = (e) => {
   input.value = e.parentElement.previousElementSibling.innerHTML;
   e.parentElement.parentElement.remove();
 };
+
+function arrRotation() {
+  let a = [1, 2, 3, 4];
+  let b = [2, 3, 4, 1];
+  let count = 0;
+
+  for (let i = 0; i < a.length; i++) {
+    a.push(a.shift());
+    count++;
+    if (JSON.stringify(a) === JSON.stringify(b)) return;
+  }
+
+  console.log("*****" + count);
+}
+
+arrRotation();
