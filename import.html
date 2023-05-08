@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Import in ES6</title>
+  </head>
+  <body>
+    <script type="module">
+      import * as exp from "./export.js";
+
+      // Use dot notation to access members
+      console.log(exp.num_set);
+      let g = new exp.Greeting("Aakash");
+      console.log(g.greeting);
+    </script>
+  </body>
+</html>

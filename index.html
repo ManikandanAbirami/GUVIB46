@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-
 <html>
+  <body>
+    <h1>JavaScript Modules</h1>
 
-<head>
-  <h1>Guvi Batch 46 - Week Days</h1>
-  <script src="get_set.js"></script>
-</head>
+    <p id="demo"></p>
 
-<body>
-  
-</body>
+    <script type="module">
+      import { sum, average } from "./utils.js";
 
+      console.log(`Result to verify Export & Import SUM ${sum(1, 2, 3, 4, 5)}`);
+      console.log(
+        `Result to verify Export & Import AVG ${average(1, 2, 3, 4, 5)}`
+      );
+    </script>
+  </body>
 </html>

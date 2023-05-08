@@ -102,3 +102,20 @@ b. Execute a task after a long-running task.
 
  21. When the keyword 'async' is prepended to a function, it can before
  safely assumed that a promise is returned from that function.
+
+
+22. Declaring variables with two new keywords - let and const. The former is used when you wish to change the value of the variable in future and the latter is used when you do not wish to change the value of the variable. Unlike var, the variables declared using let/const keywords are not hoisted.
+
+23. Classes, which are syntactic sugar over JavaScript's existing functions and help in achieving what is so-called prototype-based inheritance in ES5.
+
+24. Arrow functions, which is a new syntax over traditional functions and are used to write code quickly and more effectively. They also solve some of the problems, as we see with the context w.r.t. 'this' keyword.
+
+25. Array methods - map(), filter(), reduce() methods, which are used to iterate over an array and is a much simpler and quicker way to perform operations on an array as compared to its alternative methods.
+
+26. The powerful three dots - referred to as the spread operator as well as the rest parameters, depending upon the context in which they are used. When used as spread operator, they are used to segregate an array into its individual elements. When used as the rest parameters, they are used to treat individual arguments passed to a function as a combined array in the function parameters.
+
+27. Template Literals, which are better way of concatenating string literals. 
+
+28. Ways of destructuring an array or an object to extract the its individual elements or keys.
+
+29.import and export keywords - used for importing and exporting modules (including variables, functions, classes, etc.) defined in one file to be used in another file so as to maintain code reusability and reduce redundancy.

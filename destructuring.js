@@ -1,17 +1,18 @@
-function getArray(){
-    return ["Hello","welcome","to","Guvi","Saravana"];
+function getArray() {
+  return ["Hello", "welcome", "to", "Guvi", "Saravana"];
 }
-let [greeting,wish] = getArray();
-// console.log(greeting);
-// console.log(wish);
+// let [greeting, wish] = getArray();
+let greeting = getArray()[0];
+let wish = getArray()[1];
+console.log(greeting);
+console.log(wish);
 
-let person = {name: "Manikandan", country: "India", 
-                job: "Developer"};
+let person = { name: "Manikandan", country: "India", job: "Developer" };
 
 // let name = person.name;
 // let country = person.country;
 // let job = person.job;
-let{country,job,name} = person;
+let { country, job, name } = person;
 console.log(name);
 console.log(country);
 console.log(job);
