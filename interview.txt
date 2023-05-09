@@ -118,4 +118,4 @@ b. Execute a task after a long-running task.
 
 28. Ways of destructuring an array or an object to extract the its individual elements or keys.
 
-29.import and export keywords - used for importing and exporting modules (including variables, functions, classes, etc.) defined in one file to be used in another file so as to maintain code reusability and reduce redundancy.
+29. import and export keywords - used for importing and exporting modules (including variables, functions, classes, etc.) defined in one file to be used in another file so as to maintain code reusability and reduce redundancy.
