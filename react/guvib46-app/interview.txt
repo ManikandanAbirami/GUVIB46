@@ -141,3 +141,13 @@ npm install
     It makes up the icon for your application and appears alongside the title in the browser tab.
 
     It gets saved along with the bookmark.
+
+
+Component:
+
+1. A Component's name must start with a capital letter
+2. A class component must extend from a base/parent class named component
+3. A component must always return something
+4. export and import
+5. A component can have a extension as .js or .JSX
+6. In import statement, .jsx or .js extension is not required

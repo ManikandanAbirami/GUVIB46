@@ -1,25 +1,20 @@
-function App() {
-  let moduleName = "GUVI B46 First React app!!!!";
-  return (
-    <div>
-      <div className="header">Guvi Phone Directory</div>
-      <button> Add </button>
+import React, { Component } from "react";
+import Header from "./Header";
+import "./App.css";
+
+class App extends Component {
+  render() {
+    return (
       <div>
-        <span>{moduleName}</span>
-        <br />
-        {/* <span> Name </span>
-        <br />
-        <span> Phone </span> */}
-        <label htmlFor="name">Name:</label>
-        <input
-          id="name"
-          type="text"
-          placeholder="Type here"
-          defaultValue="Guvi-B46"
-        ></input>
+        <Header />
+        <button className="custom-btn"> Add </button>
+        <div>
+          <span>Name</span> <br></br>
+          <span>Phone</span>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
