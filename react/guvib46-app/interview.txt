@@ -167,3 +167,15 @@ State:
 1. State is something that is controlled within a component, unlike Props,
 which are controlled by a parent component. Also, a change in state calls the
 render() method again.
+
+2. State can be maintained inside a calss component only.
+
+3. State is always initialised inside the class constructor.
+
+4. In case you define the constructor of a class, you need to call
+the super() method in the first statement of the constructor definition.
+This method calls the constructor of the parent class.
+
+5. To set the state, you must always use the setState() method and never
+directly manipulate the application's state. However, setState() should never be called
+inside the constructor. 

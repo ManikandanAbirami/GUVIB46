@@ -18,6 +18,7 @@ class AddUser extends Component {
     console.log(this.state);
   };
   render() {
+    const { name, phone } = this.state;
     return (
       <div>
         <Header heading="Welcome to Add User Page"></Header>
@@ -51,8 +52,8 @@ class AddUser extends Component {
             <div className="user-info-container">
               <span className="user-to-add-heading">User to be added:</span>{" "}
               <br />
-              <span className="user-info">Name:</span> <br />
-              <span className="user-info">Phone:</span> <br />
+              <span className="user-info">Name: {name}</span> <br />
+              <span className="user-info">Phone: {phone}</span> <br />
             </div>
             <button type="submit" className="custom-btn add-btn">
               Add

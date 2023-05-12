@@ -1,38 +1,46 @@
 import React, { Component } from "react";
 import Header from "./Header";
+import "./App.css";
+
+// let users = [
+//   {
+//     id: 1,
+//     name: "John",
+//     phone: "2323232323",
+//   },
+//   {
+//     id: 2,
+//     name: "Jill",
+//     phone: "6756765678",
+//   },
+//   {
+//     id: 3,
+//     name: "Mars",
+//     phone: "3434343434",
+//   },
+//   {
+//     id: 4,
+//     name: "Jupi",
+//     phone: "43434343434",
+//   },
+//   {
+//     id: 5,
+//     name: "Venus",
+//     phone: "43434343434",
+//   },
+// ];
 
 class App extends Component {
-  delete() {
-    alert("Delete button clcked!!!");
+  constructor() {
+    super();
+    this.state = {
+      userListToShow: [],
+    };
   }
+  // delete() {
+  //   alert("Delete button clcked!!!");
+  // }
   render() {
-    let users = [
-      {
-        id: 1,
-        name: "John",
-        phone: "2323232323",
-      },
-      {
-        id: 2,
-        name: "Jill",
-        phone: "6756765678",
-      },
-      {
-        id: 3,
-        name: "Mars",
-        phone: "3434343434",
-      },
-      {
-        id: 4,
-        name: "Jupi",
-        phone: "43434343434",
-      },
-      {
-        id: 5,
-        name: "Venus",
-        phone: "43434343434",
-      },
-    ];
     return (
       <div>
         <Header heading="Welcome to GUVIB46" course="MERN Stack" />
@@ -43,7 +51,7 @@ class App extends Component {
             <span className="grid-item phone-heading">Phone</span>
           </div>
 
-          {users.map((user) => {
+          {this.state.userListToShow.map((user) => {
             return (
               <div key={user.id} className="grid-container">
                 <span className="grid-item">{user.name}</span>
