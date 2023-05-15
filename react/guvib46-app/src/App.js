@@ -36,11 +36,32 @@ class App extends Component {
     this.state = {
       userListToShow: [],
     };
+    console.log("The call is from CONSTRUCTOR");
+  }
+  componentDidMount() {
+    let newUser = {
+      id: 1,
+      name: "Person A",
+      phone: "3423434344",
+    };
+    let userList = this.state.userListToShow;
+    userList.push(newUser);
+    this.setState({ userListToShow: userList });
+    console.log("The call is from COMPONENT DID MOUNT");
+  }
+
+  componentDidUpdate() {
+    console.log("The call is from COMPONENT DID UPDATE");
+  }
+
+  componentWillUnmount() {
+    console.log("The call is from COMPONENT WILL UNMOUNT");
   }
   // delete() {
   //   alert("Delete button clcked!!!");
   // }
   render() {
+    console.log("The call is from RENDER METHOD");
     return (
       <div>
         <Header heading="Welcome to GUVIB46" course="MERN Stack" />

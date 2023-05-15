@@ -179,3 +179,10 @@ This method calls the constructor of the parent class.
 5. To set the state, you must always use the setState() method and never
 directly manipulate the application's state. However, setState() should never be called
 inside the constructor. 
+
+Hooks:
+
+1. Hooks allow functional components to use React features like state etc.
+2. Hooks can be used only inside React function components.
+3. Hooks cannot be used inside conditional(if, for loop) logics
+4. Hooks can only be called at the top level of the components.
