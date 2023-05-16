@@ -11,8 +11,8 @@ import Timer from "./Timer";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  // <App />
-  <Timer />
+  <App />
+  // <Timer />
   // <FavCar />
   // {/* <AddUser></AddUser> */}
   // </React.StrictMode>

@@ -151,6 +151,7 @@ Component:
 4. export and import
 5. A component can have a extension as .js or .JSX
 6. In import statement, .jsx or .js extension is not required
+7. Independant & re-use
 
 Props:
 

@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 
-function FavCar() {
+function FavCar(props) {
   //const [state, setState] = useState[initialState];
   const [car, setCar] = useState("Ford");
 
   return (
     <div>
-      <h1>My favorite car is {car}!!!!!</h1>
+      <h1>
+        My favorite car is {car}!!!!! {props.data}
+      </h1>
       <button type="button" onClick={() => setCar("Hyundai")}>
         Hyundai
       </button>

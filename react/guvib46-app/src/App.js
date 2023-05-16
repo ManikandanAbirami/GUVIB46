@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "./Header";
+import Timer from "./Timer";
 import "./App.css";
 
 // let users = [
