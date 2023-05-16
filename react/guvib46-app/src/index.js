@@ -7,15 +7,17 @@ import reportWebVitals from "./reportWebVitals";
 import "./common/common.css";
 import FavCar from "./FavCar";
 import Timer from "./Timer";
+import ShowUser from "./ShowUser";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  <App />
+  // <App />
   // <Timer />
   // <FavCar />
-  // {/* <AddUser></AddUser> */}
+  <AddUser></AddUser>
   // </React.StrictMode>
+  // <ShowUser></ShowUser>
 );
 
 // If you want to start measuring performance in your app, pass a function

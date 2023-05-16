@@ -17,6 +17,10 @@ class AddUser extends Component {
     this.setState(state);
     console.log(this.state);
   };
+  onSubmit = (e) => {
+    e.prevenDefault();
+    this.props.addUserHandler(this.state);
+  };
   render() {
     const { name, phone } = this.state;
     return (
@@ -24,7 +28,7 @@ class AddUser extends Component {
         <Header heading="Welcome to Add User Page"></Header>
         <div className="component-body-container">
           <button className="custom-btn">Back</button>
-          <form className="user-form">
+          <form className="user-form" onSubmit={this.onSubmit.bind(this)}>
             <label htmlFor="name" className="label-control">
               Name:
             </label>
