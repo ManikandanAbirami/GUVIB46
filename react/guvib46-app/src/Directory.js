@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import AddUser from "./AddUser";
 import ShowUser from "./ShowUser";
 import { Route, Routes } from "react-router-dom";
+import Param from "./Param";
 
 export class Directory extends Component {
   constructor() {
@@ -65,6 +66,7 @@ export class Directory extends Component {
             path="/add"
             element={<AddUser addUserHandler={this.addUser}></AddUser>}
           ></Route>
+          <Route exact path="/page/:num" element={<Param></Param>}></Route>
         </Routes>
       </div>
       // <AddUser addUserHandler={this.addUser}></AddUser>

@@ -193,3 +193,11 @@ Routing:
 1. Routing is the process that helps in loading partial content.
 2. Based on the URL that a user visits, specific content is loaded on the page.
 3. It helps in displaying different content to the user without any need for the page refresh.
+
+useParams():
+
+1. It is used when we need to access the parameters of the current route.
+
+Switch/Routes:
+
+1. Switch/Routes is used to render components only when the path will be matched.
