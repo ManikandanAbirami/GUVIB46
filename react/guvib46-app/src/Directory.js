@@ -1,11 +1,39 @@
 import React, { Component } from "react";
 import AddUser from "./AddUser";
+import ShowUser from "./ShowUser";
+import { Route, Routes } from "react-router-dom";
 
 export class Directory extends Component {
   constructor() {
     super();
     this.state = {
-      userList: [],
+      userList: [
+        {
+          id: 1,
+          name: "John",
+          phone: "2323232323",
+        },
+        {
+          id: 2,
+          name: "Jill",
+          phone: "6756765678",
+        },
+        {
+          id: 3,
+          name: "Mars",
+          phone: "3434343434",
+        },
+        {
+          id: 4,
+          name: "Jupi",
+          phone: "43434343434",
+        },
+        {
+          id: 5,
+          name: "Venus",
+          phone: "43434343434",
+        },
+      ],
     };
   }
 
@@ -24,7 +52,24 @@ export class Directory extends Component {
     console.log(this.state.userList);
   };
   render() {
-    return <AddUser addUserHandler={this.addUser}></AddUser>;
+    return (
+      <div>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={<ShowUser userList={this.state.userList}></ShowUser>}
+          ></Route>
+          <Route
+            exact
+            path="/add"
+            element={<AddUser addUserHandler={this.addUser}></AddUser>}
+          ></Route>
+        </Routes>
+      </div>
+      // <AddUser addUserHandler={this.addUser}></AddUser>
+      //   <ShowUser userList={this.state.userList}></ShowUser>
+    );
   }
 }
 

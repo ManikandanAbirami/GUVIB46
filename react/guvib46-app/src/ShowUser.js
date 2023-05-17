@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import "./ShowUser.css";
+import { Link } from "react-router-dom";
 
 // let users = [
 //   {
@@ -66,13 +67,15 @@ class ShowUser extends Component {
       <div>
         <Header heading="Welcome to GUVIB46" course="MERN Stack" />
         <div className="component-body-container">
-          <button className="custom-btn add-btn"> Add </button>
+          <Link to="/add">
+            <button className="custom-btn add-btn"> Add </button>
+          </Link>
           <div className="grid-container heading-container">
             <span className="grid-item name-heading">Name</span>
             <span className="grid-item phone-heading">Phone</span>
           </div>
 
-          {this.state.userListToShow.map((user) => {
+          {this.props.userList.map((user) => {
             return (
               <div key={user.id} className="grid-container">
                 <span className="grid-item">{user.name}</span>

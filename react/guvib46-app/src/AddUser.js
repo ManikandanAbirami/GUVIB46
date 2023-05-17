@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import "./AddUser.css";
+import { Link } from "react-router-dom";
 
 class AddUser extends Component {
   constructor() {
@@ -18,8 +19,9 @@ class AddUser extends Component {
     console.log(this.state);
   };
   onSubmit = (e) => {
-    e.prevenDefault();
+    e.preventDefault();
     this.props.addUserHandler(this.state);
+    this.setState({ id: 0, name: "", phone: "" });
   };
   render() {
     const { name, phone } = this.state;
@@ -27,7 +29,9 @@ class AddUser extends Component {
       <div>
         <Header heading="Welcome to Add User Page"></Header>
         <div className="component-body-container">
-          <button className="custom-btn">Back</button>
+          <Link to="/">
+            <button className="custom-btn">Back</button>
+          </Link>
           <form className="user-form" onSubmit={this.onSubmit.bind(this)}>
             <label htmlFor="name" className="label-control">
               Name:
