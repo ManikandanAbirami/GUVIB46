@@ -187,3 +187,9 @@ Hooks:
 2. Hooks can be used only inside React function components.
 3. Hooks cannot be used inside conditional(if, for loop) logics
 4. Hooks can only be called at the top level of the components.
+
+Routing:
+
+1. Routing is the process that helps in loading partial content.
+2. Based on the URL that a user visits, specific content is loaded on the page.
+3. It helps in displaying different content to the user without any need for the page refresh.
