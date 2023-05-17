@@ -1,0 +1,7 @@
+CRUD APPLICAION:
+
+https://dev.to/sanderdebr/creating-a-crud-app-in-react-with-hooks-3jml
+
+ADMIN DASHBOARD:
+
+https://dev.to/davidepacilio/30-free-react-dashboard-templates-and-themes-49g4
