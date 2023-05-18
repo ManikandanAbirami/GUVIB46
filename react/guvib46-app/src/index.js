@@ -5,11 +5,13 @@ import reportWebVitals from "./reportWebVitals";
 import "./common/common.css";
 import Directory from "./Directory";
 import { BrowserRouter } from "react-router-dom";
+import Parent from "./Parent";
+import FavCar from "./FavCar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Directory></Directory>
+    <Parent></Parent>
   </BrowserRouter>
 );
 

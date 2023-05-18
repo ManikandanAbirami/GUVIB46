@@ -1,26 +1,22 @@
 import React, { useState } from "react";
+import Hyundai from "./Hyundai";
+import Kia from "./Kia";
+import Maruti from "./Maruti";
 
 function FavCar(props) {
   //const [state, setState] = useState[initialState];
   const [car, setCar] = useState("Ford");
+  // var a = 10;
+  // a = 20;
 
   return (
     <div>
       <h1>
         My favorite car is {car}!!!!! {props.data}
       </h1>
-      <button type="button" onClick={() => setCar("Hyundai")}>
-        Hyundai
-      </button>
-      <button type="button" onClick={() => setCar("Maruti")}>
-        Maruti
-      </button>
-      <button type="button" onClick={() => setCar("Kia")}>
-        Kia
-      </button>
-      <button type="button" onClick={() => setCar("Honda")}>
-        Honda
-      </button>
+      <Hyundai setCar={setCar}></Hyundai>
+      <Kia setCar={setCar}></Kia>
+      <Maruti setCar={setCar}></Maruti>
     </div>
   );
 }

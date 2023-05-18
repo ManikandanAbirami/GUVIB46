@@ -27,7 +27,11 @@ class AddUser extends Component {
     const { name, phone } = this.state;
     return (
       <div>
-        <Header heading="Welcome to Add User Page"></Header>
+        <Header
+          message={this.props.message}
+          heading="Welcome to Add User Page"
+          name={this.props.name}
+        ></Header>
         <div className="component-body-container">
           <Link to="/">
             <button className="custom-btn">Back</button>

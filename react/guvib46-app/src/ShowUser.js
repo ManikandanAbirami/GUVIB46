@@ -65,7 +65,11 @@ class ShowUser extends Component {
     console.log("The call is from RENDER METHOD");
     return (
       <div>
-        <Header heading="Welcome to GUVIB46" course="MERN Stack" />
+        <Header
+          heading="Welcome to GUVIB46"
+          course="MERN Stack"
+          name={this.props.name}
+        />
         <div className="component-body-container">
           <Link to="/add">
             <button className="custom-btn add-btn"> Add </button>

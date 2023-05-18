@@ -35,6 +35,7 @@ export class Directory extends Component {
           phone: "43434343434",
         },
       ],
+      name: "",
     };
   }
 
@@ -45,6 +46,7 @@ export class Directory extends Component {
       //userList[1].id = 2
       //2 + 1 = 3
       newUser.id = userList[userList.length - 1].id + 1;
+      this.setState({ name: newUser.name });
     } else {
       newUser.id = 1;
     }
@@ -59,12 +61,23 @@ export class Directory extends Component {
           <Route
             exact
             path="/"
-            element={<ShowUser userList={this.state.userList}></ShowUser>}
+            element={
+              <ShowUser
+                name={this.state.name}
+                userList={this.state.userList}
+              ></ShowUser>
+            }
           ></Route>
           <Route
             exact
             path="/add"
-            element={<AddUser addUserHandler={this.addUser}></AddUser>}
+            element={
+              <AddUser
+                message="contextAPI"
+                addUserHandler={this.addUser}
+                name={this.state.name}
+              ></AddUser>
+            }
           ></Route>
           <Route exact path="/page/:num" element={<Param></Param>}></Route>
         </Routes>
