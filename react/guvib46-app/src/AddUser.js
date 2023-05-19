@@ -29,7 +29,7 @@ class AddUser extends Component {
       <div>
         <Header
           message={this.props.message}
-          heading="Welcome to Add User Page"
+          heading="Header from Add User"
           name={this.props.name}
         ></Header>
         <div className="component-body-container">

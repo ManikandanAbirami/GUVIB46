@@ -201,3 +201,17 @@ useParams():
 Switch/Routes:
 
 1. Switch/Routes is used to render components only when the path will be matched.
+
+Context API:
+
+1. It allows data to be passed through a component tree without having to pass
+   props manually at every level.
+
+   --> Introduction
+   --> Why use the context API?
+   --> Creating a context API
+   --> Creating a Context Provider
+   --> Creating context provide components
+   --> Drawbacks of Context API - When the context value changes, all the components
+       that use the same context will re-render. This can cause performance issue
+       in larger applications.

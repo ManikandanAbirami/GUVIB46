@@ -11,7 +11,7 @@ import FavCar from "./FavCar";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Parent></Parent>
+    <Directory></Directory>
   </BrowserRouter>
 );
 

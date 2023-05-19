@@ -66,7 +66,7 @@ class ShowUser extends Component {
     return (
       <div>
         <Header
-          heading="Welcome to GUVIB46"
+          heading="Header from Show User"
           course="MERN Stack"
           name={this.props.name}
         />
