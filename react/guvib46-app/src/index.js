@@ -7,11 +7,13 @@ import Directory from "./Directory";
 import { BrowserRouter } from "react-router-dom";
 import Parent from "./Parent";
 import FavCar from "./FavCar";
+import Counter from "./Counter";
+import CounterReduce from "./CounterReduce";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Directory></Directory>
+    <CounterReduce></CounterReduce>
   </BrowserRouter>
 );
 
