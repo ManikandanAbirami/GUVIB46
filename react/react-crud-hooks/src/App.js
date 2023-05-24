@@ -1,8 +1,9 @@
 import userList from "./data.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import UserTable from "./tables/UserTable";
 import AddUserForm from "./forms/AddUserForm";
 import EditUserForm from "./forms/EditUserForm.js";
+import useAsyncRequest from "./hooks/useAsyncRequest.js";
 
 function App() {
   //setState to store users array
@@ -10,7 +11,8 @@ function App() {
 
   //To add new user to the state
   const addUser = (user) => {
-    user.id = users.length + 1;
+    // user.id = users.length + 1;
+    user.id = users[users.length - 1].id + 1;
     setUsers([...users, user]);
   };
 
@@ -33,6 +35,21 @@ function App() {
     );
   };
 
+  const [data, loading] = useAsyncRequest(10);
+
+  useEffect(() => {
+    if (data) {
+      const formattedUsers = data.map((obj, i) => {
+        return {
+          id: i,
+          name: obj.name.first,
+          username: obj.name.first + " " + obj.name.last,
+        };
+      });
+      setUsers(formattedUsers);
+    }
+  }, [data]);
+
   return (
     <div className="container">
       <h1>React CRUD App with Hooks</h1>
@@ -54,14 +71,18 @@ function App() {
             </div>
           )}
         </div>
-        <div className="seven columns">
-          <h2>View users</h2>
-          <UserTable
-            users={users}
-            deleteUser={deleteUser}
-            editUser={editUser}
-          />
-        </div>
+        {loading || !users ? (
+          <p>Loading...</p>
+        ) : (
+          <div className="seven columns">
+            <h2>View users</h2>
+            <UserTable
+              users={users}
+              deleteUser={deleteUser}
+              editUser={editUser}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
