@@ -13,7 +13,7 @@ import CounterReduce from "./CounterReduce";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <CounterReduce></CounterReduce>
+    <Directory></Directory>
   </BrowserRouter>
 );
 
