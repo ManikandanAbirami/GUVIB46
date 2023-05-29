@@ -1,0 +1,29 @@
+NETLIFY:
+
+1. npm install netlify-cli -g
+2. npm run build
+3. 'build' folder will be created in the Directory
+4. netlify deploy
+5. It will ask for the 'site name' and other details. Pls, enter with extra care 
+6. It will ask for 'path directory', just type 'build'
+7. netlify deploy --prod
+
+CRUD APPLICAION:
+
+https://dev.to/sanderdebr/creating-a-crud-app-in-react-with-hooks-3jml
+
+https://www.taniarascia.com/getting-started-with-react/
+
+https://github.com/taniarascia/react-tutorial
+
+ADMIN DASHBOARD:
+
+https://dev.to/davidepacilio/30-free-react-dashboard-templates-and-themes-49g4
+
+JS EBOOK:
+
+https://dump.nrgs.org/bakerscollege/drmfree/General%20Programming/Head%20First/headfirstjavascriptprogramming_ebook.pdf
+
+FORMIK:
+
+https://formik.org/docs/overview
