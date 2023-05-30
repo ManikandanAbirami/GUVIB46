@@ -27,3 +27,9 @@ https://dump.nrgs.org/bakerscollege/drmfree/General%20Programming/Head%20First/h
 FORMIK:
 
 https://formik.org/docs/overview
+
+MySQL:
+
+https://www.w3schools.com/mysql/default.asp
+
+https://onecompiler.com/mysql/3za3qxhr3
