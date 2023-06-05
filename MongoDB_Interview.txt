@@ -1,0 +1,49 @@
+MongoDB Basics (Written in c++):
+
+1. Non-relational database
+2. Scale-out architecture - to handle load it will add extra nodes.
+3. MongoDB stores data as JSON documents - simple for delvelopers to learn and use.
+4. A record in MongoDB is a document - composed of key value pair similar to JSON objs.
+    ex:
+    {
+      title: "Good Morning",
+      body: "Hi all, how you doiny, today??",
+      category: "Wishes",
+      likes: "200",
+      tags: ["morning", "friends"],
+      date: Date(),
+      comments: [
+        {
+          user: "Manikandan A",
+          message: "Same to you",
+          dateCreated: new Date(2023, 20, 2, 15),
+          like: 4
+        },
+        {
+          user: "John",
+          message: ":) :) :) ",
+          dateCreated: new Date(2023, 20, 12, 15),
+          like: 6
+        },
+      ]
+    }
+5. Database - SCHEMA/DATABASE
+6. Table - COLLECTION
+7. Column - FIELD
+8. Rows - DOCUMENT
+9. Advantages:
+   --> Schema less : One collection holds different documents
+   --> Single object
+   --> No complex joins
+   --> Uses internal memory   
+10.Why MongoDB?
+   --> Fast in-place updates
+   --> Document oriented storage
+   --> Replication and high availability(discuss later point)
+11.Where to use MongoDB?
+   --> Big Data
+   --> User Data Management
+   --> Content Management and Delivery    
+   --> Mobile and Social Infrastructure 
+
+Basic commands, Insert, Query commands, update, delete.

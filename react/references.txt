@@ -36,3 +36,5 @@ https://onecompiler.com/mysql/3za3qxhr3
 
 https://onecompiler.com/mysql/3za6px9qf
 
+https://www.w3schools.com/mysql/mysql_foreignkey.asp
+

@@ -1,0 +1,30 @@
+db.products.aggregate([
+    {
+        $project: {
+            mani: {
+                $map: {
+                    input: "$rating",
+                    as: "rating",
+                    in: { $add : ["$$rating", 1]}
+                }
+            }
+        }
+    }
+])
+
+current:[2,3,4]
+
+[{"Review":"Good!!", "Rating":3},
+{"Review":"bad!!", "Rating":1},
+{"Review":"avg!!", "Rating":2}]
+
+var obj = new Products();
+obj.anyFunction();
+obj.ptduct_price;
+
+
+db.editors.find().forEach( 
+function(myDoc) { 
+    print( "User: " + myDoc.full_name ); 
+    } 
+)
