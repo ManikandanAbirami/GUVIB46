@@ -1,0 +1,33 @@
+db.orders.insertMany([{item:"Pen", price:20, ordered:200},{item:"Eraser", price:12, ordered:20},{item:"Pencil", price:10, ordered:100}])
+
+db.warehouse.insertMany([{stock_item:"Pen", warehouse:"A", in_stock:50},{stock_item:"Pen", warehouse:"B", in_stock:150},
+{stock_item:"Eraser", warehouse:"A", in_stock:30},{stock_item:"Eraser", warehouse:"A", in_stock:50},
+{stock_item:"Pencil", warehouse:"B", in_stock:50}])
+
+
+db.orders.aggregate([
+    {
+        $lookup:
+        {
+            from:"warehouse",
+            let: { order_item:"$item", order_quantity:"$ordered"},
+            pipeline: [
+                {
+                    $match:
+                    {
+                        $expr:
+                        {
+                            $and:
+                            [
+                                {$eq: ['$stock_item', '$$order_item']},
+                                {$gte: ['$in_stock', '$order_quantity']}
+                            ]
+                        }
+                    }
+                },
+                { $project: {stock_item:0, _id:0}}
+            ],
+            as: 'stockeddata'
+        }
+    }
+])
