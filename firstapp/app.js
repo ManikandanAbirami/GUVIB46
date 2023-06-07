@@ -7,8 +7,12 @@ app.get("/", (req, res) => {
   res.send("Hello world from Node application!!");
 });
 
-app.get("/read", (req, res) => {
-  res.send("Navigated to Read node API!!!!!");
+app.get("/about", (req, res) => {
+  res.send("About us page");
+});
+
+app.get("/contact", (req, res) => {
+  res.send("Contact us page");
 });
 
 app.listen(port, () => {
