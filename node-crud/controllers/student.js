@@ -1,9 +1,4 @@
-const express = require("express");
-const mongoose = require("mongoose");
-
 const student = require("../models/studentdata.js");
-
-const router = express.Router();
 
 const createStudent = async (req, res) => {
   console.log("Request from Postman: "+req.body);
@@ -26,4 +21,63 @@ const createStudent = async (req, res) => {
   }
 };
 
+const getStudents = async (req, res) => {
+  try {
+    const students = await student.find();
+
+    res.status(200).json(students);
+  }
+  catch(error) {
+    res.status(400).json({ message: error.message });
+  }
+}
+
+const getSpecificStudent = async (req, res) => {
+  const _id = req.params._id;
+  try {
+    const stud = await student.findOne({_id: _id});
+
+    res.status(200).json(stud);
+  }
+  catch(error) {
+    res.status(400).json({ message: error.message });
+  }
+}
+
+const updateStudent = async (req, res) => {
+  const roll = req.params.roll;
+
+  try {
+    await student.findOneAndUpdate({
+      roll: roll,
+    },
+    {
+      name: req.body.name,
+    }
+    )
+
+    res.status(201).json({roll: roll});
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
+const deleteStudent = async (req, res) => {
+  const roll = req.params.roll;
+
+  try {
+    await student.findOneAndRemove({
+      roll: roll,
+    });
+
+    res.status(201).json({roll: roll});
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
 module.exports.createStudent = createStudent;
+module.exports.getStudents = getStudents;
+module.exports.getSpecificStudent = getSpecificStudent;
+module.exports.updateStudent = updateStudent;
+module.exports.deleteStudent = deleteStudent;
