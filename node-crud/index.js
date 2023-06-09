@@ -1,10 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
+require('dotenv').config();
+
 const app = express();
 
 
-const dbUrl = "mongodb://localhost:27017/test";
+const dbUrl = process.env.DB_URL;//"mongodb://localhost:27017/test";
 
 mongoose.connect(dbUrl, { useNewUrlParser: true });
 
@@ -22,7 +24,7 @@ try {
   console.log("Error: " + error);
 }
 
-const port = 3000;
+const port = process.env.PORT;
 
 const studentRouter = require("./routes/student");
 app.use("/students", studentRouter);
