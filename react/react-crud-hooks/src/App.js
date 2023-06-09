@@ -17,11 +17,11 @@ function App() {
   };
 
   //To delete the selected/specific user from the user list
-  const deleteUser = (id) => setUsers(users.filter((user) => user.id !== id));
+  const deleteUser = (roll) => setUsers(users.filter((user) => user.roll !== roll));
 
   const [editing, setEditing] = useState(false);
 
-  const initialUser = { id: null, name: "", username: "" };
+  const initialUser = { roll: null, name: "", clas: "" };
 
   const [currentUser, setCurrentUser] = useState(initialUser);
 
@@ -31,19 +31,19 @@ function App() {
   };
   const updateUser = (newUser) => {
     setUsers(
-      users.map((user) => (user.id === currentUser.id ? newUser : user))
+      users.map((user) => (user.roll === currentUser.roll ? newUser : user))
     );
   };
 
-  const [data, loading] = useAsyncRequest(10);
+  const [data, loading] = useAsyncRequest(3);
 
   useEffect(() => {
     if (data) {
       const formattedUsers = data.map((obj, i) => {
         return {
-          id: i,
-          name: obj.name.first,
-          username: obj.name.first + " " + obj.name.last,
+          roll: obj.roll,
+          name: obj.name,
+          clas: obj.class,
         };
       });
       setUsers(formattedUsers);

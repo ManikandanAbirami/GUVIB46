@@ -52,7 +52,7 @@ const updateStudent = async (req, res) => {
       roll: roll,
     },
     {
-      name: req.body.name,
+      $pop:{ subjects: 1}
     }
     )
 
