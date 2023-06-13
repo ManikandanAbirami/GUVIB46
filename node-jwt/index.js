@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const cors = require('cors');
 require('dotenv').config();
 const authRoute = require('./routes/auth');
+const dashboard = require('./routes/dashboard');
 
 const PORT = process.env.PORT || 4050;
 
@@ -36,4 +37,5 @@ app.listen(PORT, () => {
 });
 
 app.use('/api/users', authRoute);
+app.use('/api/dashboard', dashboard);
 
