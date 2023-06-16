@@ -1,12 +1,12 @@
 export function getBooksAPI() {
-  return fetch("http://localhost:4000/books")
+  return fetch("https://fsd-b46.onrender.com/books")
     .then((res) => res.json())
     .then((data) => data);
 }
 
 export function addBookAPI(book) {
   try {
-    return fetch("http://localhost:4000/books", {
+    return fetch("https://fsd-b46.onrender.com/books", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -21,7 +21,7 @@ export function addBookAPI(book) {
 }
 
 export function updateBookAPI(book) {
-  return fetch("http://localhost:4000/books/" + book._id, {
+  return fetch("https://fsd-b46.onrender.com/books/" + book._id, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -33,7 +33,7 @@ export function updateBookAPI(book) {
 }
 
 export function deleteBookAPI(id) {
-  return fetch(`http://localhost:4000/books/${id}`, {
+  return fetch(`https://fsd-b46.onrender.com/books/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
