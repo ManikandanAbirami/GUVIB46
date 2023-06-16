@@ -8,6 +8,9 @@ const mongoose = require('mongoose');
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 app.use('/books', booksRoute);
 // app.use((req, res, next) => {
 //     console.log("I'm a middleware!!");
